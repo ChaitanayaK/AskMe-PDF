@@ -87,7 +87,7 @@ def main():
             st.session_state.something = st.session_state.widget
             st.session_state.widget = ''
             docs = docsearch.invoke(st.session_state.something)
-            chain = load_qa_chain(ChatOpenAI(api_key=API_KEY, temperature=0), chain_type="stuff")
+            chain = load_qa_chain(ChatOpenAI(api_key=API_KEY, temperature=0.3), chain_type="stuff")
             output = chain.run(input_documents=docs, question=st.session_state.something)
             st.session_state['chat_history'].append(("You", st.session_state.something))
             st.session_state['chat_history'].append(("PDF", output))

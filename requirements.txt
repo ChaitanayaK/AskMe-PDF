@@ -1,0 +1,5 @@
+streamlit==v1.17.0
+langchain  
+openai  
+Pillow==9.5.0  
+dotenv==0.22.0
