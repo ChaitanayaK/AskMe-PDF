@@ -11,17 +11,17 @@ import os
 
 load_dotenv()
 
-API_KEY = os.environ.get('GPT_API_KEY')
+API_KEY = os.environ.get('API_KEY')
 
 def writeStatements(chat_history):
     for speaker, text in chat_history:
         title_container = st.container()
         col1, col2 = st.columns([1, 20])
         if speaker == 'You':
-            image_path = "human_image.png"
+            image_path = "assets/human_image.png"
         else:
             st.markdown("<hr>", unsafe_allow_html=True)
-            image_path = "bot_image.png"
+            image_path = "assets/bot_image.png"
         image = Image.open(image_path)
         with title_container:
             with col1:

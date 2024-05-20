@@ -1,5 +1,6 @@
-streamlit==v1.17.0
-langchain  
-openai  
+streamlit==1.17.0
+langchain==0.1.20
+langchain_community==0.0.38
+openai==1.30.1 
 Pillow==9.5.0  
 dotenv==0.22.0
