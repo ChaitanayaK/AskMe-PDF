@@ -8,6 +8,7 @@ import streamlit as st
 from dotenv import load_dotenv
 import openai
 import os
+from pdfminer.high_level import extract_text
 
 load_dotenv()
 
